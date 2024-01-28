@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div id="main-loader" class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+
+
+    <div class="position-fixed w-navbar vh-100 d-flex">
+        <div class="container w-nav-content vh-100">
+            <div class="sidebar d-flex flex-column justify-content-between" id="sidebar">
+                <div class="upperContent">
+                    <ul>
+                        <li><a href="#" onclick="writeSearch(),toggleBtn.click();">Search</a></li>
+                        <li><a href="#" onclick="getCategories(),toggleBtn.click();">Categories</a></li>
+                        <li><a href="#" onclick="getAreaList(),toggleBtn.click();">Area</a></li>
+                        <li><a href="#" onclick="getIngredientsList(),toggleBtn.click();">Ingredients</a></li>
+                        <li><a href="#" onclick="displayContactUs(),toggleBtn.click();">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="lowerContent">
+                    <div class="lowerIcons d-flex flex-row justify-content-center align-self-center">
+                        <a href="#"><i class="fa-brands fa-facebook p-1"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter p-1"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe p-1"></i></a>
+                    </div>
+                    <div class="nav-footer">
+                        <footer class="text-center text-white p-4 d-flex justify-content-center align-self-center">
+                            <p>Copyright &copy; 2023 Designed by <span class="fw-bolder">Adel</span>. All rights reserved</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav-header" class="container nav-header vh-100 d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="w-100" src="images/logo.png" alt="">
+            <div class="slider-btn">
+                <button class="nav-btn" id="toggleBtn"><i id="header-icon" class="fa-solid open-close-icon fa-2x fa-align-justify"></i></button>
+                <!-- <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i> -->
+            </div>
+            <div class="social-icons py-4 d-flex flex-column justify-content-center align-items-center">
+               <a href="#"><i class="fa-solid fa-globe d-block"></i></a> 
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container w-75 d-flex justify-content-between align-items-center text-center" id="searchContainer">
+       
+    </div>
+
+    <div class="site-content min-vh-100 position-relative">
+        <div id="inner-loading-screen" class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center fadeOut">
+            <i class="bn- fa fa-spinner fa-spin fa-5x text-white"></i>
+        </div>
+        
+    
+        <div class="container">
+            <div class="row py-5 g-4 " id="Data">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

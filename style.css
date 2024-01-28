@@ -1,0 +1,39 @@
+*{
+  list-style: none;
+  font-size: 16px; 
+  font-weight: 400; 
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/banner.png);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.search-box{
+    background-color: teal ;
+    position: relative;
+    display: flex;
+}
+.search-bar{
+    height: 70px !important;
+    border-radius: 30px;
+    /*background-color: black;
+    */color: white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.search-btn{
+    position: absolute;
+    right: 5px;
+    top: 8%;
+    border-radius: 50px;
+    padding: 16px 40px;
+
+}
